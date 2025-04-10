@@ -8,7 +8,7 @@ public class app {
         char quality= 'A';
         Long phone_number= 4253456666L;
         int zip_code= 98123;
-        int x = 12;
+        int x = 10;
         
         int y = 7;
         int z = 3;
@@ -25,10 +25,12 @@ public class app {
         int d = 5;
              result = c * d;
              System.out.println(result);
+
         int e = 20;
         int f = 4;
              result = e / f;
              System.out.println(result);
+
         int g = 10;
         int h = 3;
              result = g % h;
