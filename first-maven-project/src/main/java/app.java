@@ -12,26 +12,26 @@ public class app {
         
         int y = 7;
         int z = 3;
-        int result
-            result = y + z
+        int result;
+            result = y + z;
             System.out.println(result);
 
         int a = 10;
         int b = 4;
-             result = a - b
+             result = a - b;
              System.out.println(result);
 
         int c = 2;
         int d = 5;
-             result = c * d
+             result = c * d;
              System.out.println(result);
         int e = 20;
         int f = 4;
-             result = c * d
+             result = e / f;
              System.out.println(result);
         int g = 10;
         int h = 3;
-             result = c * d
+             result = g % h;
              System.out.println(result);
 
         
