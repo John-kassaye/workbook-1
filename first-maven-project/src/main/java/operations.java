@@ -37,9 +37,9 @@ public class operations {
         //System.out.println(a/b + " and " + a%b);
 
         //11
-        double weight= 60;
+        int weight= 60;
         double height= 1.7;
-        double bmi = weight/ (height*height);
+        double bmi = (double)(weight/Math.pow(height , 2));
         //System.out.println(bmi);
 
         //12
@@ -74,7 +74,8 @@ public class operations {
 
         //17
         char achar = 'z';
-        //System.out.println(achar - 2);
+        char newachar = (char)(achar - 2);
+        //System.out.println(newachar);
 
         //18
         long billion= 2000000000L;
@@ -93,13 +94,34 @@ public class operations {
         int remaining_minutes = total_minutes % 60;
         //System.out.println("Total minutes: " + total_minutes);
         //System.out.println("That is " + full_hours + " hours" +  " and " + remaining_minutes + " minutes");
-
+        //System.out.printf("%d hours %d minutes" , full_hours, remaining_minutes);
+        //same down there %d %.2f
         // bonus
 
-        double electricity_cost_per_hour = 2.75;
+        double cost_per_hour = 2.75;
         int hours = 5;
-        double cost_for_5_hour = electricity_cost_per_hour * hours;
+        double cost_for_5_hour = cost_per_hour * hours;
         //System.out.println("cost for 5 hours " + "= " + cost_for_5_hour + " dollars");
+        //System.out.printf("%d hours %.1f minutes" ,hours , cost_per_hour);
+
+        //double value = 1234.567;
+        //double wholeNumber = Math.round(value);
+        double value = 1234.567;
+        double wholeNumber = Math.floor(value*5/2);
+
+        //System.out.println(wholeNumber);
+
+       double lk = 3.794;
+       double bt = (double) Math.round(lk * 10)/10;
+       //System.out.println(bt);
+
+
+
+
+
+
+
+
 
 
 

@@ -37,7 +37,7 @@ public class app {
              System.out.println(result);
 
         
-        //System.out.println(y+z);
+        System.out.println(y+z);
         //System.out.println(a-b);
         //System.out.println(c*d);
         //System.out.println(e/f);
