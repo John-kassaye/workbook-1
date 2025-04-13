@@ -9,11 +9,10 @@ public class PayrollCalculator {
         double hours = input.nextDouble();
         System.out.println("What is ur pay rate");
         double payRate = input.nextDouble();
-        double gross= 0;
-        if (hours>40){
-            gross = hours * (payRate*1.5);
-        }
-        else{
+        double gross = 0;
+        if (hours > 40) {
+            gross = hours * (payRate * 1.5);
+        } else {
             gross = hours * payRate;
         }
         System.out.println("ur name is " + name + " and " + "ur gross pay " + gross);

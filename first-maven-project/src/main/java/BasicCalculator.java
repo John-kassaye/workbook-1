@@ -8,7 +8,7 @@ public class BasicCalculator {
         System.out.print("Enter the second num\n");
         double num2 = input.nextDouble();
         input.nextLine();
-        System.out.println("possible calculations\nadd\nsubtract\nmultiply\ndivide");
+        System.out.println("possible calculations\n(a)dd\n(s)ubtract\n(m)ultiply\n(d)ivide");
         String option = input.nextLine();
         double result=0;
         if(option.equals("add")){
@@ -21,5 +21,7 @@ public class BasicCalculator {
             result= num * num2;}
 
             System.out.println("here is ur result: " + result);
+
+
         }
 }
