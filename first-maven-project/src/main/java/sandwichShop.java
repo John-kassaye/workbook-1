@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class sandwichShop {
    static  Scanner sandwich = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.println(calculate(size(),age()));
+        System.out.println(calculate(size(),age(),loaded()));
     }
 
 
@@ -15,7 +15,11 @@ public class sandwichShop {
         System.out.println("What is ur age:");
         return sandwich.nextInt();
     }
-    public static double calculate(int sandwich , int age){
+    public static int loaded(){
+        System.out.println("Would you like the sandwich to be loaded\n1:yes\n2:no");
+        return sandwich.nextInt();
+    }
+    public static double calculate(int sandwich , int age , int load){
         double price = 0;
         if (sandwich == 1){
             price = 5.45;
@@ -23,10 +27,20 @@ public class sandwichShop {
             price = 8.95;
         }
 
-        if (age<17){
+        if (age < 17) {
             price *= 0.9;
-        } else if(age >= 65){
+        } else if (age >= 65) {
             price *= 0.8;
+        }
+
+        if (load == 1) {
+            if (sandwich == 1) {
+                price += 1;
+            } else if (sandwich == 2) {
+                price += 1.75;
+            }
+
+
         }
         return price;
     }
