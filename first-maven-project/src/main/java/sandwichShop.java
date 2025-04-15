@@ -39,8 +39,6 @@ public class sandwichShop {
             } else if (sandwich == 2) {
                 price += 1.75;
             }
-
-
         }
         return price;
     }
